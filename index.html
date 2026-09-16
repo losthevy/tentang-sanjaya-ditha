@@ -360,26 +360,48 @@ async function getJSON(url){
   if (j.error) throw new Error(j.error);
   return j;
 }
+function jsonp(url){
+  return new Promise((res, rej) => {
+    const cb = "cvcb_" + Date.now();
+    const sc = document.createElement("script");
+    const done = () => { delete window[cb]; sc.remove(); };
+    const t = setTimeout(() => { done(); rej(new Error("JSONP timeout")); }, 15000);
+    window[cb] = d => { clearTimeout(t); done(); d && d.error ? rej(new Error(d.error)) : res(d); };
+    sc.onerror = () => { clearTimeout(t); done(); rej(new Error("JSONP gagal dimuat")); };
+    sc.src = url + (url.includes("?") ? "&" : "?") + "callback=" + cb + "&t=" + Date.now();
+    document.head.appendChild(sc);
+  });
+}
+async function fromSheets(){
+  try { return await getJSON(API_URL + "?t=" + Date.now()); }
+  catch (e1) {
+    console.warn("fetch gagal, mencoba JSONP:", e1);
+    try { return await jsonp(API_URL); }
+    catch (e2) { throw new Error(e1.message + " | " + e2.message); }
+  }
+}
 async function load(){
   let cached = null;
   try { cached = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch (e) {}
   if (cached) { render(cached); setSync(false, "Showing saved copy, checking for updates"); }
 
+  let err = "";
   if (API_URL) {
     try {
-      const d = await getJSON(API_URL);
+      const d = await fromSheets();
       render(d);
       try { localStorage.setItem(CACHE_KEY, JSON.stringify(d)); } catch (e) {}
       setSync(true, `Synced from Google Sheets${d.updatedAt ? ", " + fmtTime(d.updatedAt) : ""}`);
       return;
-    } catch (e) { console.warn("Sheets API failed:", e); }
+    } catch (e) { err = e.message; console.error("Sheets API failed:", e); }
   }
   try {
     const d = await getJSON("data.json");
     if (!cached || !API_URL) render(d);
-    setSync(false, API_URL ? "Sheets unreachable, showing saved data" : "Showing data.json. Set API_URL to sync with Sheets");
+    setSync(false, API_URL ? `Sheets unreachable (${err}), showing saved data` : "Showing data.json. Set API_URL to sync with Sheets");
   } catch (e) {
     if (!cached) app.innerHTML = `<h1>CV data unavailable</h1><p class="tagline">Check API_URL in index.html or make sure data.json is deployed next to it.</p>`;
+    else setSync(false, `Sheets unreachable (${err})`);
   }
 }
 
