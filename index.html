@@ -7,178 +7,168 @@
 <meta name="description" content="Public Asset Management student at PKN STAN, competitive essayist, and builder of AI-assisted web prototypes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#ffffff; --fg:#37352f; --muted:#787774; --faint:#9b9a97;
-  --line:#e9e9e7; --soft:#f7f6f3; --hover:#f1f1ef; --link:#2383e2;
-  --t-blue:#e7f3f8; --t-blue-f:#337ea9;
-  --t-purple:#f3eef9; --t-purple-f:#9065b0;
-  --t-green:#edf3ec; --t-green-f:#448361;
-  --t-yellow:#fbf3db; --t-yellow-f:#9f6b00;
-  --t-gray:#f1f1ef; --t-gray-f:#787774;
-  --t-red:#fdebec; --t-red-f:#d44c47;
-}
+:root{--bg:#fff;--fg:#262626;--muted:#737373;--line:#dbdbdb;--soft:#fafafa;--hover:#efefef;--link:#0064d1;
+  --gold:#f5e6b8;--silver:#e7e9ee;--bronze:#f3dfd0;--blue:#e3eefb;--gray:#f1f1ef}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:underline;text-decoration-color:rgba(55,53,47,.35);text-underline-offset:2px}
-a:hover{text-decoration-color:var(--fg)}
-:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:3px}
-img{max-width:100%;display:block}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:4px}
+img{display:block;max-width:100%}
 
-.cover{height:150px;background:
-  linear-gradient(90deg,rgba(255,255,255,0) 0 49.5%,rgba(255,255,255,.35) 49.5% 50.5%,rgba(255,255,255,0) 50.5%) 0 0/48px 48px,
-  linear-gradient(0deg,rgba(255,255,255,0) 0 49.5%,rgba(255,255,255,.35) 49.5% 50.5%,rgba(255,255,255,0) 50.5%) 0 0/48px 48px,
-  #d9e7ef}
-.page{max-width:860px;margin:0 auto;padding:0 24px 64px}
+.top{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:935px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+.handle{font-weight:700;font-size:18px}
+.sync{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;max-width:60%;text-align:right}
+.dot{width:7px;height:7px;border-radius:50%;background:#c7c7c7;flex:none}.dot.live{background:#2e9e5b}
 
-.head{display:flex;gap:24px;align-items:flex-end;margin-top:-58px;flex-wrap:wrap}
-.avatar{width:128px;height:128px;border-radius:6px;border:4px solid #fff;background:var(--soft);object-fit:cover;box-shadow:0 0 0 1px var(--line)}
-.avatar-ph{display:grid;place-items:center;font:600 40px Newsreader,Georgia,serif;color:var(--faint)}
-.head-actions{margin-left:auto;display:flex;gap:6px;padding-bottom:6px}
-.btn{font:500 13px Inter,sans-serif;color:var(--fg);background:#fff;border:1px solid var(--line);border-radius:5px;padding:5px 10px;cursor:pointer;text-decoration:none}
-.btn:hover{background:var(--hover)}
+.wrap{max-width:935px;margin:0 auto;padding:30px 20px 60px}
 
-h1{font:600 clamp(30px,5vw,42px)/1.15 Newsreader,Georgia,serif;margin:20px 0 6px;letter-spacing:-.01em}
-.tagline{color:var(--muted);margin:0 0 16px;font-size:16px}
+/* header */
+.prof{display:grid;grid-template-columns:290px 1fr;gap:0 20px;align-items:center;margin-bottom:36px}
+.ring{width:190px;height:190px;border-radius:50%;padding:4px;margin:0 auto;background:conic-gradient(from 200deg,#337ea9,#448361,#dfab01,#d44c47,#9065b0,#337ea9);cursor:zoom-in;border:0}
+.ring .av{width:100%;height:100%;border-radius:50%;border:4px solid #fff;object-fit:cover;background:var(--soft);display:grid;place-items:center;font-size:54px;font-weight:600;color:#aaa}
+.row1{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.row1 h1{font-size:20px;font-weight:400;margin:0 8px 0 0}
+.btn{background:var(--hover);border:0;border-radius:8px;padding:7px 16px;font-weight:600;font-size:14px;cursor:pointer;color:var(--fg)}
+.btn:hover{background:#dbdbdb;text-decoration:none}
+.btn.pri{background:#0095f6;color:#fff}.btn.pri:hover{background:#1877f2}
+.stats{display:flex;gap:36px;margin:0 0 18px;padding:0;list-style:none;font-size:16px}
+.stats b{font-weight:600}
+.prof .ring{grid-row:span 2}
+.bio{grid-column:2}
+.bio h2{font-size:14px;font-weight:600;margin:0}
+.bio p{margin:2px 0;white-space:pre-line}
+.bio .cat{color:var(--muted)}
+.bio .more{background:none;border:0;padding:0;color:var(--muted);cursor:pointer}
+.bio .links a{font-weight:600;margin-right:12px;display:inline-block}
 
-.props{display:grid;grid-template-columns:140px 1fr;gap:2px 12px;font-size:14px;margin:0 0 20px}
-.props dt{color:var(--muted);padding:4px 0}
-.props dd{margin:0;padding:4px 0;word-break:break-word}
+/* highlights */
+.hl{display:flex;gap:34px;overflow-x:auto;padding:4px 4px 12px;margin-bottom:28px;scrollbar-width:none}
+.hl button{background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;flex:none;width:86px}
+.hl .c{width:80px;height:80px;border-radius:50%;border:1px solid var(--line);padding:3px}
+.hl .c span{width:100%;height:100%;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:30px}
+.hl button:hover .c span{background:var(--hover)}
+.hl small{font-size:12px;font-weight:600;white-space:nowrap}
 
-.callout{display:flex;gap:12px;background:var(--soft);border-radius:5px;padding:14px 16px;margin:8px 0 8px}
-.callout p{margin:0;max-width:68ch}
+/* tabs */
+.tabs{display:flex;justify-content:center;gap:56px;border-top:1px solid var(--line)}
+.tab{background:none;border:0;border-top:1px solid transparent;margin-top:-1px;padding:16px 0;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--muted);cursor:pointer;display:flex;gap:6px;align-items:center}
+.tab[aria-selected="true"]{color:var(--fg);border-top-color:var(--fg)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:#fff;border-color:var(--fg)}
 
-.stats{display:flex;flex-wrap:wrap;gap:28px;margin:22px 0 4px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stat b{display:block;font:600 26px/1.1 Newsreader,Georgia,serif}
-.stat span{font-size:13px;color:var(--muted)}
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.tile{position:relative;aspect-ratio:1;border:0;padding:0;cursor:pointer;overflow:hidden;background:var(--gray)}
+.tile img{width:100%;height:100%;object-fit:cover}
+.tile .txt{position:absolute;inset:0;padding:16px;display:flex;flex-direction:column;justify-content:space-between;text-align:left}
+.tile .txt .m{font-size:38px;line-height:1}
+.tile .txt b{font-size:13px;font-weight:600;display:block}
+.tile .txt span{font-size:15px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.r1{background:var(--gold)}.r2{background:var(--silver)}.r3{background:var(--bronze)}.r4{background:var(--blue)}
+.tile .ov{position:absolute;inset:0;background:rgba(0,0,0,.45);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:12px;text-align:center;opacity:0;transition:opacity .15s}
+.tile:hover .ov,.tile:focus-visible .ov{opacity:1}
+.tile .ov b{font-size:15px}
+.tile .badge{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.92);color:var(--fg);font-size:11px;font-weight:600;padding:2px 7px;border-radius:999px}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:48px 0}
 
-h2{font:600 22px/1.3 Inter,sans-serif;margin:44px 0 10px;display:flex;align-items:center;gap:8px}
-h2 small{font-weight:400;font-size:13px;color:var(--faint)}
+/* about */
+.about h3{font-size:16px;margin:28px 0 6px}
+.about .it{padding:10px 0;border-bottom:1px solid var(--line)}
+.about .it:last-child{border-bottom:0}
+.about .it b{font-weight:600}
+.about .sub{color:var(--muted)}
+.about ul{margin:4px 0 0;padding-left:18px}
+.tags span{display:inline-block;background:var(--hover);border-radius:6px;padding:2px 8px;margin:2px 4px 2px 0;font-size:13px}
 
-/* database view */
-.views{display:flex;gap:2px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:0}
-.view{font:500 13px Inter,sans-serif;color:var(--muted);background:none;border:0;border-bottom:2px solid transparent;padding:6px 10px;cursor:pointer;margin-bottom:-1px}
-.view:hover{color:var(--fg)}
-.view[aria-pressed="true"]{color:var(--fg);border-bottom-color:var(--fg)}
-.db{width:100%;border-collapse:collapse;font-size:14px}
-.db-wrap{overflow-x:auto}
-.db th{font-weight:400;color:var(--muted);text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
-.db td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.db tr:hover td{background:#fafaf9}
-.medal{width:28px;font-size:17px;text-align:center}
-.a-name{font-weight:500}
-.a-sub{color:var(--muted);font-size:13px}
-.thumb{width:44px;height:44px;border-radius:4px;object-fit:cover;cursor:zoom-in;border:1px solid var(--line)}
-.tag{display:inline-block;font-size:12px;line-height:1.5;padding:0 6px;border-radius:3px;white-space:nowrap;margin:1px 2px 1px 0}
-.tag.blue{background:var(--t-blue);color:var(--t-blue-f)}
-.tag.purple{background:var(--t-purple);color:var(--t-purple-f)}
-.tag.green{background:var(--t-green);color:var(--t-green-f)}
-.tag.yellow{background:var(--t-yellow);color:var(--t-yellow-f)}
-.tag.gray{background:var(--t-gray);color:var(--t-gray-f)}
-.tag.red{background:var(--t-red);color:var(--t-red-f)}
-.more{margin-top:8px}
+/* modal */
+.modal{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;padding:24px}
+.modal.on{display:flex}
+.x{position:fixed;top:12px;right:18px;background:none;border:0;color:#fff;font-size:32px;cursor:pointer;line-height:1}
+.nav{position:fixed;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:0;background:#fff;cursor:pointer;font-size:18px}
+.nav.l{left:18px}.nav.r{right:18px}
+.post{background:#fff;border-radius:6px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,1fr);width:min(1000px,100%);max-height:90vh}
+.post .media{background:#000;display:grid;place-items:center;min-height:360px}
+.post .media img{max-height:90vh;width:100%;object-fit:contain}
+.post .media .txt{position:static;width:100%;height:100%;aspect-ratio:1;padding:40px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.post .media .txt .m{font-size:72px}
+.post .media .txt b{display:block;font-size:14px;margin-bottom:6px}
+.post .media .txt span{display:block;font-size:24px;font-weight:600;line-height:1.3}
+.post .side{display:flex;flex-direction:column;min-height:0}
+.post .ph{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);font-weight:600}
+.mini{width:32px;height:32px;border-radius:50%;object-fit:cover;background:var(--hover);flex:none;display:grid;place-items:center;font-size:12px;color:#999}
+.post .cap{padding:16px;overflow-y:auto;flex:1}
+.post .cap dl{display:grid;grid-template-columns:110px 1fr;gap:6px 10px;margin:12px 0 0}
+.post .cap dt{color:var(--muted)}.post .cap dd{margin:0}
+.post .foot{border-top:1px solid var(--line);padding:12px 16px;color:var(--muted);font-size:12px}
+.sheet{background:#fff;border-radius:12px;width:min(520px,100%);max-height:85vh;overflow:auto}
+.sheet h3{margin:0;padding:14px 18px;border-bottom:1px solid var(--line);text-align:center;font-size:16px;position:sticky;top:0;background:#fff}
+.sheet .about{padding:0 18px 14px}
+.bigav{max-width:min(520px,90vw);max-height:85vh;border-radius:8px}
 
-/* list blocks */
-.list{list-style:none;margin:0;padding:0}
-.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--line)}
-.item:last-child{border-bottom:0}
-.item h3{margin:0;font-size:15px;font-weight:600}
-.item .when{color:var(--muted);font-size:13px;white-space:nowrap}
-.item .sub{grid-column:1/-1;color:var(--muted);font-size:14px}
-.item ul{grid-column:1/-1;margin:4px 0 0;padding-left:20px}
-.item li{margin:2px 0;max-width:72ch}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:48px}
 
-.committee{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 24px}
-.committee div{padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
-.committee b{font-weight:500}
-
-.proj{display:grid;grid-template-columns:1fr 150px;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
-.proj.noimg{grid-template-columns:1fr}
-.proj img{width:150px;height:100px;object-fit:cover;border-radius:4px;border:1px solid var(--line);cursor:zoom-in}
-.proj h3{margin:0 0 2px;font-size:15px;font-weight:600}
-.proj p{margin:2px 0;color:var(--fg);max-width:68ch}
-
-.skills{display:grid;grid-template-columns:140px 1fr;gap:10px 16px;font-size:14px}
-.skills dt{color:var(--muted);padding-top:2px}
-.skills dd{margin:0}
-
-footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);color:var(--faint);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--faint);margin-right:6px;vertical-align:1px}
-.dot.live{background:#448361}
-
-.skel{background:linear-gradient(90deg,var(--soft),var(--hover),var(--soft));background-size:200% 100%;animation:sk 1.2s infinite;border-radius:4px;height:14px;margin:8px 0}
-@keyframes sk{to{background-position:-200% 0}}
-
-.lightbox{position:fixed;inset:0;background:rgba(15,15,15,.72);display:none;place-items:center;padding:24px;z-index:9;cursor:zoom-out}
-.lightbox.on{display:grid}
-.lightbox img{max-height:88vh;border-radius:4px;background:#fff}
-
-@media (max-width:640px){
-  .page{padding:0 16px 48px}
-  .props,.skills{grid-template-columns:1fr}
-  .props dt,.skills dt{padding-bottom:0}
-  .head-actions{margin-left:0}
-  .proj{grid-template-columns:1fr}
-  .proj img{width:100%;height:160px}
-  .db .hide-sm{display:none}
+@media (max-width:735px){
+  .wrap{padding:16px 0 48px}
+  .prof{grid-template-columns:96px 1fr;gap:0 20px;padding:0 16px;margin-bottom:18px;align-items:start}
+  .prof .ring{width:96px;height:96px;padding:3px;grid-row:auto}.ring .av{border-width:3px;font-size:30px}
+  .row1{margin-bottom:10px}.row1 h1{width:100%;font-size:18px}
+  .btn{padding:6px 12px;font-size:13px}
+  .stats{gap:20px;font-size:14px;margin-bottom:0}
+  .stats li{text-align:center}.stats b{display:block}
+  .bio{grid-column:1/-1;margin-top:14px}
+  .hl{padding:4px 16px 12px;gap:16px}
+  .hl button{width:70px}.hl .c{width:64px;height:64px}.hl .c span{font-size:24px}
+  .tabs{gap:0;justify-content:space-around}
+  .chips,.about-tab{padding:0 16px}
+  .grid{gap:2px}
+  .tile .txt{padding:8px}.tile .txt .m{font-size:24px}.tile .txt span{font-size:11px}.tile .txt b{font-size:10px}
+  .tile .badge{font-size:9px;top:4px;right:4px}
+  .post{grid-template-columns:1fr;overflow-y:auto}
+  .post .media{min-height:0}.post .media img{max-height:55vh}
+  .nav{top:auto;bottom:16px;transform:none}
 }
-@media (prefers-reduced-motion:reduce){.skel{animation:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.tile .ov{transition:none}}
 @media print{
-  .cover,.head-actions,.views,.more,footer .dot,.thumb{display:none!important}
-  .head{margin-top:0}
-  h2{margin-top:22px;break-after:avoid}
-  .item,.db tr,.proj{break-inside:avoid}
-  body{font-size:12px}
+  .top,.hl,.tabs,.chips,.grid,.row1 .btn,.modal{display:none!important}
+  .about-tab{display:block!important}
+  .ring{width:110px;height:110px}
 }
 </style>
 </head>
 <body>
-<div class="cover" aria-hidden="true"></div>
-<main class="page" id="app">
-  <div class="head">
-    <div class="avatar avatar-ph" id="avatar">ID</div>
-  </div>
-  <div class="skel" style="width:60%;height:34px;margin-top:24px"></div>
-  <div class="skel" style="width:80%"></div>
-  <div class="skel" style="width:70%"></div>
-</main>
-<div class="lightbox" id="lb" role="dialog" aria-label="Photo preview"><img alt=""></div>
+<header class="top"><div class="top-in"><span class="handle" id="handle">cv</span><span class="sync" id="sync"><span class="dot"></span>Loading</span></div></header>
+<main class="wrap" id="app"><p style="text-align:center;color:#737373;padding:80px 0">Loading profile</p></main>
+<div class="modal" id="modal" role="dialog" aria-modal="true"></div>
 
 <script>
-/* ============================================================
-   KONFIGURASI
-   Tempel URL Web App Apps Script (berakhiran /exec) di bawah.
-   Jika kosong atau gagal, halaman memakai data.json.
-   ============================================================ */
+/* URL Web App Apps Script (/exec). Kosongkan untuk memakai data.json saja. */
 const API_URL = "https://script.google.com/macros/s/AKfycbwjewY4gIfJ5WQpqSrHmh5JqnLxG741lkvxyF_-bK_t-BqB42LvEzZGkperlkmqhcRa6w/exec";
-
 const CACHE_KEY = "cv-data-v1";
-const app = document.getElementById("app");
+
+const app = document.getElementById("app"), modal = document.getElementById("modal");
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const has = v => String(v ?? "").trim() !== "";
+const bullets = s => String(s || "").split(/\n|\s\|\s/).map(x => x.trim()).filter(Boolean);
 
-/* ---------- Foto Google Drive ---------- */
-function driveId(u){
-  u = String(u || "");
-  const m = u.match(/\/d\/([\w-]{20,})/) || u.match(/[?&]id=([\w-]{20,})/);
-  return m ? m[1] : null;
-}
-function imgTag(url, cls, alt, w = 800){
-  if (!has(url)) return "";
-  const id = driveId(url);
-  const src = id ? `https://drive.google.com/thumbnail?id=${id}&sz=w${w}` : url;
-  const big = id ? `https://drive.google.com/thumbnail?id=${id}&sz=w1600` : url;
-  return `<img class="${cls}" src="${esc(src)}" data-id="${id || ""}" data-big="${esc(big)}" alt="${esc(alt)}" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)">`;
+/* ---------- Foto Drive ---------- */
+function driveId(u){ u = String(u || ""); const m = u.match(/\/d\/([\w-]{20,})/) || u.match(/[?&]id=([\w-]{20,})/); return m ? m[1] : null; }
+function imgSrc(u, w){ const id = driveId(u); return id ? `https://drive.google.com/thumbnail?id=${id}&sz=w${w}` : u; }
+function img(u, w, cls = "", alt = ""){
+  if (!has(u)) return "";
+  return `<img class="${cls}" src="${esc(imgSrc(u, w))}" data-id="${driveId(u) || ""}" data-w="${w}" alt="${esc(alt)}" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)">`;
 }
 function imgFail(el){
   const id = el.dataset.id;
-  if (id && !el.dataset.retry){ el.dataset.retry = 1; el.src = `https://lh3.googleusercontent.com/d/${id}=w800`; }
-  else el.remove();
+  if (id && !el.dataset.retry){ el.dataset.retry = 1; el.src = `https://lh3.googleusercontent.com/d/${id}=w${el.dataset.w || 800}`; }
+  else el.style.visibility = "hidden";
 }
 
-/* ---------- Helpers ---------- */
+/* ---------- Peringkat ---------- */
 function rank(p){
   p = String(p).toLowerCase();
   if (/semi/.test(p)) return 5;
@@ -190,180 +180,190 @@ function rank(p){
   return 6;
 }
 const MEDAL = {1:"🥇",2:"🥈",3:"🥉",3.5:"🏅",4:"🎖️",5:"📄",6:"📄"};
-function levelTag(t){
-  const s = String(t).toLowerCase();
-  const c = /internasional|international/.test(s) ? "purple" : /nasional|national/.test(s) ? "blue" : "gray";
-  return has(t) ? `<span class="tag ${c}">${esc(t)}</span>` : "";
-}
-function statusTag(t){
-  if (!has(t)) return "";
-  const c = /ongoing|berlangsung|progress/i.test(t) ? "yellow" : "green";
-  return `<span class="tag ${c}">${esc(t)}</span>`;
-}
-const bullets = s => String(s || "").split(/\n|\s\|\s/).map(x => x.trim()).filter(Boolean);
-const link = (href, text) => has(href) ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>` : "";
+const RCLS = r => r === 1 ? "r1" : r === 2 ? "r2" : r <= 3.5 ? "r3" : r <= 5 ? "r4" : "";
+const isOngoing = a => /ongoing|berlangsung|progress/i.test(a.status);
+const isIntl = a => /internasional|international/i.test(a.tingkat);
 
-/* ---------- Render ---------- */
-let achFilter = "all", achAll = false, DATA = null;
+/* ---------- State ---------- */
+let D = null, P = {}, ACH = [], PROJ = [], tab = "awards", filt = "all", list = [], idx = 0;
 
 function render(d){
-  DATA = d;
-  const p = d.profil || {};
-  const ach = (d.prestasi || []).map((a, i) => ({...a, _r: rank(a.peringkat), _i: i}))
+  D = d; P = d.profil || {};
+  ACH = (d.prestasi || []).map((a, i) => ({...a, _r: rank(a.peringkat), _i: i}))
     .sort((a, b) => (Number(b.tahun) || 0) - (Number(a.tahun) || 0) || a._r - b._r || a._i - b._i);
-  const podium = ach.filter(a => a._r <= 3).length;
-  const first = ach.filter(a => a._r === 1).length;
-  const intl = ach.filter(a => /internasional|international/i.test(a.tingkat) && a._r <= 3.5).length;
-  const initials = String(p.nama || "ID").split(/\s+/).map(w => w[0]).slice(0, 2).join("");
-  const phone = String(p.telepon || "").replace(/[^\d+]/g, "");
-
-  document.title = `${p.nama || "CV"} | CV`;
+  PROJ = d.proyek || [];
+  const podium = ACH.filter(a => a._r <= 3).length;
+  const handle = P.username || String(P.nama || "cv").toLowerCase().split(/\s+/).slice(-2).join(".");
+  document.getElementById("handle").textContent = handle;
+  document.title = `${P.nama || "CV"} | CV`;
+  const initials = String(P.nama || "CV").split(/\s+/).map(w => w[0]).slice(0, 2).join("");
+  const phone = String(P.telepon || "").replace(/\D/g, "");
+  const longBio = String(P.ringkasan || "");
+  const shortBio = longBio.length > 160 ? longBio.slice(0, 160).replace(/\s+\S*$/, "") : longBio;
 
   app.innerHTML = `
-  <div class="head">
-    ${has(p.foto) ? imgTag(p.foto, "avatar", p.nama, 400) : `<div class="avatar avatar-ph">${esc(initials)}</div>`}
-    <div class="head-actions">
-      ${has(p.cv_pdf) ? `<a class="btn" href="${esc(p.cv_pdf)}" target="_blank" rel="noopener">Download PDF</a>` : ""}
-      <button class="btn" onclick="window.print()">Print</button>
+  <section class="prof">
+    <button class="ring" id="avBtn" aria-label="View profile photo">
+      ${has(P.foto) ? img(P.foto, 500, "av", P.nama) : `<span class="av">${esc(initials)}</span>`}
+    </button>
+    <div>
+      <div class="row1">
+        <h1>${esc(handle)}</h1>
+        ${has(P.email) ? `<a class="btn pri" href="mailto:${esc(P.email)}">Email</a>` : ""}
+        ${has(P.linkedin) ? `<a class="btn" href="${esc(P.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>` : ""}
+        ${has(P.cv_pdf) ? `<a class="btn" href="${esc(P.cv_pdf)}" target="_blank" rel="noopener">PDF</a>` : `<button class="btn" onclick="window.print()">Print</button>`}
+      </div>
+      <ul class="stats">
+        <li><b>${ACH.length}</b> awards</li>
+        <li><b>${podium}</b> podiums</li>
+        <li><b>${esc(P.total_kompetisi || PROJ.length)}</b> ${has(P.total_kompetisi) ? "competitions" : "projects"}</li>
+      </ul>
     </div>
+    <div class="bio">
+      <h2>${esc(P.nama)}</h2>
+      <p class="cat">${esc(P.tagline)}</p>
+      ${has(P.kampus) ? `<p>🏛️ ${esc(P.kampus)}${has(P.lokasi) ? `, ${esc(P.lokasi)}` : ""}</p>` : ""}
+      <p id="bioTxt">${esc(shortBio)}${shortBio !== longBio ? `… <button class="more" id="bioMore">more</button>` : ""}</p>
+      <p class="links">
+        ${has(P.linkedin) ? `<a href="${esc(P.linkedin)}" target="_blank" rel="noopener">🔗 ${esc(P.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>` : ""}
+        ${phone ? `<a href="https://wa.me/${phone.replace(/^0/, "62")}" target="_blank" rel="noopener">💬 WhatsApp</a>` : ""}
+      </p>
+    </div>
+  </section>
+
+  <nav class="hl" aria-label="Highlights">
+    ${[["edu","🎓","Education",d.pendidikan],["org","🧭","Leadership",d.organisasi],["com","🎪","Committee",d.kepanitiaan],["skl","🧩","Skills",d.keahlian],["con","✉️","Contact",[1]]]
+      .filter(h => (h[3] || []).length)
+      .map(([k, e, l]) => `<button data-hl="${k}"><span class="c"><span>${e}</span></span><small>${l}</small></button>`).join("")}
+  </nav>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="awards">▦ AWARDS</button>
+    <button class="tab" role="tab" data-tab="projects">◧ PROJECTS</button>
+    <button class="tab" role="tab" data-tab="about">☰ ABOUT</button>
   </div>
+  <div id="pane"></div>
+  <footer>${esc(P.nama)}</footer>`;
 
-  <h1>${esc(p.nama)}</h1>
-  <p class="tagline">${esc(p.tagline)}</p>
-
-  <dl class="props">
-    ${has(p.kampus) ? `<dt>Campus</dt><dd>${esc(p.kampus)}</dd>` : ""}
-    ${has(p.lokasi) ? `<dt>Location</dt><dd>${esc(p.lokasi)}</dd>` : ""}
-    ${has(p.email) ? `<dt>Email</dt><dd>${link("mailto:" + p.email, p.email)}${has(p.email_kampus) ? `<br>${link("mailto:" + p.email_kampus, p.email_kampus)}` : ""}</dd>` : ""}
-    ${has(p.telepon) ? `<dt>Phone</dt><dd>${link("https://wa.me/" + phone.replace(/^\+/, ""), p.telepon)}</dd>` : ""}
-    ${has(p.linkedin) ? `<dt>LinkedIn</dt><dd>${link(p.linkedin, p.linkedin.replace(/^https?:\/\/(www\.)?/, ""))}</dd>` : ""}
-  </dl>
-
-  ${has(p.ringkasan) ? `<div class="callout"><span aria-hidden="true">💡</span><p>${esc(p.ringkasan)}</p></div>` : ""}
-
-  <div class="stats">
-    ${has(p.total_kompetisi) ? `<div class="stat"><b>${esc(p.total_kompetisi)}</b><span>competitions entered</span></div>` : ""}
-    <div class="stat"><b>${podium}</b><span>podium finishes</span></div>
-    <div class="stat"><b>${first}</b><span>first places</span></div>
-    <div class="stat"><b>${intl}</b><span>international awards</span></div>
-  </div>
-
-  <h2 id="awards">🏆 Awards and achievements <small>${ach.length} entries</small></h2>
-  <div class="views" role="group" aria-label="Filter achievements">
-    ${[["all","All"],["podium","Podium"],["finalist","Finalist"],["intl","International"],["ongoing","Ongoing"]]
-      .map(([k, l]) => `<button class="view" data-f="${k}" aria-pressed="${achFilter === k}">${l}</button>`).join("")}
-  </div>
-  <div class="db-wrap"><table class="db">
-    <thead><tr><th></th><th>Achievement</th><th class="hide-sm">Level</th><th>Year</th><th class="hide-sm"></th></tr></thead>
-    <tbody id="achBody"></tbody>
-  </table></div>
-  <button class="btn more" id="achMore" hidden></button>
-
-  ${section("🎓 Education", d.pendidikan, e => `
-    <li class="item"><h3>${esc(e.institusi)}</h3><span class="when">${esc(e.periode)}</span>
-      <span class="sub">${esc([e.gelar, e.lokasi].filter(has).join(", "))}</span>
-      ${has(e.keterangan) ? `<ul>${bullets(e.keterangan).map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
-    </li>`)}
-
-  ${section("🧭 Leadership and organizations", d.organisasi, o => `
-    <li class="item"><h3>${esc(o.peran)}</h3><span class="when">${esc(o.periode)}</span>
-      <span class="sub">${esc(o.organisasi)}</span>
-      ${has(o.deskripsi) ? `<ul>${bullets(o.deskripsi).map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
-    </li>`)}
-
-  ${(d.kepanitiaan || []).length ? `
-    <h2>🎪 Event and committee roles</h2>
-    <div class="committee">${d.kepanitiaan.map(k => `
-      <div><b>${esc(k.peran)}</b><br><span class="a-sub">${esc(k.acara)}${has(k.tahun) ? `, ${esc(k.tahun)}` : ""}</span></div>`).join("")}
-    </div>` : ""}
-
-  ${(d.proyek || []).length ? `
-    <h2>🛠️ Projects and creative work</h2>
-    ${d.proyek.map(x => `
-      <div class="proj ${has(x.foto) ? "" : "noimg"}">
-        <div>
-          <h3>${has(x.tautan) ? link(x.tautan, x.judul) : esc(x.judul)}</h3>
-          <div class="a-sub">${esc(x.periode)}</div>
-          <p>${esc(x.deskripsi)}</p>
-        </div>
-        ${imgTag(x.foto, "", x.judul, 600)}
-      </div>`).join("")}` : ""}
-
-  ${(d.keahlian || []).length ? `
-    <h2>🧩 Skills</h2>
-    <dl class="skills">${d.keahlian.map(s => `
-      <dt>${esc(s.kelompok)}</dt>
-      <dd>${String(s.isi || "").split(";").map(x => x.trim()).filter(Boolean).map(x => `<span class="tag gray">${esc(x)}</span>`).join(" ")}</dd>`).join("")}
-    </dl>` : ""}
-
-  <footer>
-    <span id="syncState"><span class="dot"></span>Loading data</span>
-    <span>${esc(p.nama)}</span>
-  </footer>`;
-
-  renderAch(ach);
-  app.querySelectorAll(".view").forEach(b => b.onclick = () => {
-    achFilter = b.dataset.f; achAll = false;
-    app.querySelectorAll(".view").forEach(x => x.setAttribute("aria-pressed", x === b));
-    renderAch(ach);
-  });
+  if (shortBio !== longBio) document.getElementById("bioMore").onclick = () => { document.getElementById("bioTxt").textContent = longBio; };
+  document.getElementById("avBtn").onclick = () => has(P.foto) && openModal(`<img class="bigav" src="${esc(imgSrc(P.foto, 1200))}" alt="${esc(P.nama)}" referrerpolicy="no-referrer">`);
+  app.querySelectorAll("[data-hl]").forEach(b => b.onclick = () => openHighlight(b.dataset.hl));
+  app.querySelectorAll(".tab").forEach(b => b.onclick = () => { tab = b.dataset.tab; renderPane(); });
+  renderPane();
 }
 
-function section(title, rows, tpl){
-  if (!rows || !rows.length) return "";
-  return `<h2>${title}</h2><ul class="list">${rows.map(tpl).join("")}</ul>`;
+function renderPane(){
+  app.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  const pane = document.getElementById("pane");
+  if (tab === "about") { pane.innerHTML = `<div class="about about-tab">${aboutHTML(["edu","org","com","skl"])}</div>`; return; }
+
+  let chips = "";
+  if (tab === "awards") {
+    const F = {all: () => true, podium: a => a._r <= 3.5, finalist: a => a._r >= 4 && a._r < 6, intl: isIntl, ongoing: isOngoing};
+    list = ACH.filter(F[filt]);
+    chips = `<div class="chips">${[["all","All"],["podium","Podium"],["finalist","Finalist"],["intl","International"],["ongoing","Ongoing"]]
+      .map(([k, l]) => `<button class="chip" data-f="${k}" aria-pressed="${filt === k}">${l}</button>`).join("")}</div>`;
+  } else list = PROJ.map(p => ({...p, _proj: true}));
+
+  pane.innerHTML = chips + `<div class="grid">${list.length ? list.map((x, i) => tile(x, i)).join("")
+    : `<p class="empty">Nothing here yet. Add a row in the ${tab === "awards" ? "Prestasi" : "Proyek"} sheet to post it.</p>`}</div>`;
+  pane.querySelectorAll(".chip").forEach(c => c.onclick = () => { filt = c.dataset.f; renderPane(); });
+  pane.querySelectorAll(".tile").forEach(t => t.onclick = () => openPost(+t.dataset.i));
+  // tambahkan tile ke print hanya lewat tab about
+  if (!document.querySelector(".about-tab.print")) {
+    const pr = document.createElement("div"); pr.className = "about about-tab print"; pr.style.display = "none";
+    pr.innerHTML = aboutHTML(["awards","edu","org","com","proj","skl"]); pane.appendChild(pr);
+  }
 }
 
-function renderAch(ach){
-  const f = {
-    all: () => true,
-    podium: a => a._r <= 3.5,
-    finalist: a => a._r >= 4 && a._r < 6,
-    intl: a => /internasional|international/i.test(a.tingkat),
-    ongoing: a => /ongoing|berlangsung|progress/i.test(a.status)
-  }[achFilter];
-  const rows = ach.filter(f);
-  const LIMIT = 10;
-  const shown = achAll ? rows : rows.slice(0, LIMIT);
-  const body = document.getElementById("achBody");
-  body.innerHTML = shown.length ? shown.map(a => `
-    <tr>
-      <td class="medal" title="${esc(a.peringkat)}">${MEDAL[a._r]}</td>
-      <td>
-        <div class="a-name">${esc(a.peringkat)}, ${has(a.tautan) ? link(a.tautan, a.lomba) : esc(a.lomba)}</div>
-        <div class="a-sub">${esc([a.penyelenggara, a.kategori].filter(has).join(", "))}</div>
-        ${has(a.catatan) ? `<div class="a-sub">${esc(a.catatan)}</div>` : ""}
-        ${statusTag(a.status)}
-      </td>
-      <td class="hide-sm">${levelTag(a.tingkat)}</td>
-      <td>${esc(a.tahun)}</td>
-      <td class="hide-sm">${imgTag(a.foto, "thumb", a.lomba, 200)}</td>
-    </tr>`).join("")
-    : `<tr><td colspan="5" class="a-sub">No achievements match this view yet. Add a row in the Prestasi sheet to show it here.</td></tr>`;
-  const more = document.getElementById("achMore");
-  more.hidden = rows.length <= LIMIT;
-  more.textContent = achAll ? "Show fewer" : `Show all ${rows.length}`;
-  more.onclick = () => { achAll = !achAll; renderAch(ach); };
+function textCard(x){
+  if (x._proj) return `<div class="txt r4"><span class="m">🛠️</span><div><b>${esc(x.periode)}</b><span>${esc(x.judul)}</span></div></div>`;
+  return `<div class="txt ${RCLS(x._r)}"><span class="m">${MEDAL[x._r]}</span><div><b>${esc(x.peringkat)}, ${esc(x.tahun)}</b><span>${esc(x.lomba)}</span></div></div>`;
+}
+function tile(x, i){
+  const title = x._proj ? x.judul : x.lomba;
+  const hover = x._proj ? `<b>${esc(x.judul)}</b><span>${esc(x.periode)}</span>` : `<b>${MEDAL[x._r]} ${esc(x.peringkat)}</b><span>${esc(x.tahun)}</span>`;
+  return `<button class="tile" data-i="${i}" aria-label="${esc(title)}">
+    ${has(x.foto) ? img(x.foto, 600, "", title) : textCard(x)}
+    ${!x._proj && isOngoing(x) ? `<span class="badge">Ongoing</span>` : ""}
+    <span class="ov">${hover}</span>
+  </button>`;
 }
 
-function setSync(live, text){
-  const el = document.getElementById("syncState");
-  if (el) el.innerHTML = `<span class="dot ${live ? "live" : ""}"></span>${esc(text)}`;
+function openPost(i){
+  idx = (i + list.length) % list.length;
+  const x = list[idx];
+  const media = has(x.foto) ? `<img src="${esc(imgSrc(x.foto, 1600))}" data-id="${driveId(x.foto) || ""}" data-w="1600" alt="" referrerpolicy="no-referrer" onerror="imgFail(this)">` : textCard(x);
+  const row = (k, v) => has(v) ? `<dt>${k}</dt><dd>${v}</dd>` : "";
+  const lnk = has(x.tautan) ? `<a href="${esc(x.tautan)}" target="_blank" rel="noopener">Open link</a>` : "";
+  const cap = x._proj
+    ? `<b>${esc(x.judul)}</b><p>${esc(x.deskripsi)}</p><dl>${row("Period", esc(x.periode))}${row("Link", lnk)}</dl>`
+    : `<b>${MEDAL[x._r]} ${esc(x.peringkat)}</b><p>${esc(x.lomba)}</p>
+       <dl>${row("Organizer", esc(x.penyelenggara))}${row("Level", esc(x.tingkat))}${row("Category", esc(x.kategori))}
+       ${row("Year", esc(x.tahun))}${row("Status", esc(x.status))}${row("Note", esc(x.catatan))}${row("Link", lnk)}</dl>`;
+  openModal(`
+    ${list.length > 1 ? `<button class="nav l" aria-label="Previous" onclick="event.stopPropagation();openPost(${idx - 1})">‹</button><button class="nav r" aria-label="Next" onclick="event.stopPropagation();openPost(${idx + 1})">›</button>` : ""}
+    <article class="post">
+      <div class="media">${media}</div>
+      <div class="side">
+        <div class="ph">${has(P.foto) ? img(P.foto, 100, "mini") : `<span class="mini">•</span>`}${esc(document.getElementById("handle").textContent)}</div>
+        <div class="cap">${cap}</div>
+        <div class="foot">${idx + 1} of ${list.length}</div>
+      </div>
+    </article>`);
 }
+
+function aboutHTML(parts){
+  const it = (b, s, extra = "") => `<div class="it"><b>${b}</b>${s ? `<div class="sub">${s}</div>` : ""}${extra}</div>`;
+  const ul = t => has(t) ? `<ul>${bullets(t).map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+  const S = {
+    awards: () => ACH.length ? `<h3>Awards</h3>` + ACH.map(a => it(`${esc(a.peringkat)}, ${esc(a.lomba)}`, esc([a.penyelenggara, a.tingkat, a.tahun, a.catatan].filter(has).join(", ")))).join("") : "",
+    edu: () => (D.pendidikan || []).length ? `<h3>Education</h3>` + D.pendidikan.map(e => it(esc(e.institusi), esc([e.gelar, e.lokasi, e.periode].filter(has).join(", ")), ul(e.keterangan))).join("") : "",
+    org: () => (D.organisasi || []).length ? `<h3>Leadership and organizations</h3>` + D.organisasi.map(o => it(esc(o.peran), esc([o.organisasi, o.periode].filter(has).join(", ")), ul(o.deskripsi))).join("") : "",
+    com: () => (D.kepanitiaan || []).length ? `<h3>Event and committee roles</h3>` + D.kepanitiaan.map(k => it(esc(k.peran), esc([k.acara, k.tahun].filter(has).join(", ")))).join("") : "",
+    proj: () => PROJ.length ? `<h3>Projects</h3>` + PROJ.map(p => it(esc(p.judul), esc(p.periode), `<div>${esc(p.deskripsi)}</div>`)).join("") : "",
+    skl: () => (D.keahlian || []).length ? `<h3>Skills</h3>` + D.keahlian.map(s => it(esc(s.kelompok), "", `<div class="tags">${String(s.isi || "").split(";").map(x => x.trim()).filter(Boolean).map(x => `<span>${esc(x)}</span>`).join("")}</div>`)).join("") : "",
+    con: () => `<h3>Contact</h3>` +
+      (has(P.email) ? it("Email", `<a href="mailto:${esc(P.email)}">${esc(P.email)}</a>${has(P.email_kampus) ? `<br><a href="mailto:${esc(P.email_kampus)}">${esc(P.email_kampus)}</a>` : ""}`) : "") +
+      (has(P.telepon) ? it("Phone", esc(P.telepon)) : "") +
+      (has(P.linkedin) ? it("LinkedIn", `<a href="${esc(P.linkedin)}" target="_blank" rel="noopener">${esc(P.linkedin)}</a>`) : "")
+  };
+  return parts.map(p => S[p]()).join("");
+}
+
+function openHighlight(k){
+  const T = {edu: "Education", org: "Leadership", com: "Committee", skl: "Skills", con: "Contact"};
+  openModal(`<div class="sheet" onclick="event.stopPropagation()"><h3>${T[k]}</h3><div class="about">${aboutHTML([k]).replace(/<h3>.*?<\/h3>/, "")}</div></div>`);
+}
+
+function openModal(html){
+  modal.innerHTML = `<button class="x" aria-label="Close">×</button>` + html;
+  modal.classList.add("on"); document.body.style.overflow = "hidden";
+}
+function closeModal(){ modal.classList.remove("on"); modal.innerHTML = ""; document.body.style.overflow = ""; }
+modal.addEventListener("click", e => { if (e.target === modal || e.target.classList.contains("x")) closeModal(); });
+document.addEventListener("keydown", e => {
+  if (!modal.classList.contains("on")) return;
+  if (e.key === "Escape") closeModal();
+  if (modal.querySelector(".post")) {
+    if (e.key === "ArrowRight") openPost(idx + 1);
+    if (e.key === "ArrowLeft") openPost(idx - 1);
+  }
+});
+window.addEventListener("beforeprint", () => document.querySelectorAll(".about-tab.print").forEach(x => x.style.display = "block"));
+window.addEventListener("afterprint", () => document.querySelectorAll(".about-tab.print").forEach(x => x.style.display = "none"));
+
+/* ---------- Data: fetch, JSONP cadangan, lalu data.json ---------- */
+function setSync(live, text){ document.getElementById("sync").innerHTML = `<span class="dot ${live ? "live" : ""}"></span>${esc(text)}`; }
 const fmtTime = iso => { const d = new Date(iso); return isNaN(d) ? "" : d.toLocaleString("en-GB", {dateStyle: "medium", timeStyle: "short"}); };
-
-/* ---------- Load: cache dulu, lalu data terbaru ---------- */
 async function getJSON(url){
   const r = await fetch(url, {cache: "no-store"});
   if (!r.ok) throw new Error("HTTP " + r.status);
-  const j = await r.json();
-  if (j.error) throw new Error(j.error);
-  return j;
+  const j = await r.json(); if (j.error) throw new Error(j.error); return j;
 }
 function jsonp(url){
   return new Promise((res, rej) => {
-    const cb = "cvcb_" + Date.now();
-    const sc = document.createElement("script");
+    const cb = "cvcb_" + Date.now(), sc = document.createElement("script");
     const done = () => { delete window[cb]; sc.remove(); };
     const t = setTimeout(() => { done(); rej(new Error("JSONP timeout")); }, 15000);
     window[cb] = d => { clearTimeout(t); done(); d && d.error ? rej(new Error(d.error)) : res(d); };
@@ -374,46 +374,29 @@ function jsonp(url){
 }
 async function fromSheets(){
   try { return await getJSON(API_URL + "?t=" + Date.now()); }
-  catch (e1) {
-    console.warn("fetch gagal, mencoba JSONP:", e1);
-    try { return await jsonp(API_URL); }
-    catch (e2) { throw new Error(e1.message + " | " + e2.message); }
-  }
+  catch (e1) { try { return await jsonp(API_URL); } catch (e2) { throw new Error(e1.message + " | " + e2.message); } }
 }
 async function load(){
   let cached = null;
   try { cached = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch (e) {}
-  if (cached) { render(cached); setSync(false, "Showing saved copy, checking for updates"); }
-
+  if (cached) { render(cached); setSync(false, "Checking for updates"); }
   let err = "";
   if (API_URL) {
     try {
-      const d = await fromSheets();
-      render(d);
+      const d = await fromSheets(); render(d);
       try { localStorage.setItem(CACHE_KEY, JSON.stringify(d)); } catch (e) {}
-      setSync(true, `Synced from Google Sheets${d.updatedAt ? ", " + fmtTime(d.updatedAt) : ""}`);
-      return;
+      setSync(true, `Synced ${fmtTime(d.updatedAt)}`); return;
     } catch (e) { err = e.message; console.error("Sheets API failed:", e); }
   }
   try {
     const d = await getJSON("data.json");
     if (!cached || !API_URL) render(d);
-    setSync(false, API_URL ? `Sheets unreachable (${err}), showing saved data` : "Showing data.json. Set API_URL to sync with Sheets");
+    setSync(false, API_URL ? `Sheets unreachable (${err})` : "Showing data.json");
   } catch (e) {
-    if (!cached) app.innerHTML = `<h1>CV data unavailable</h1><p class="tagline">Check API_URL in index.html or make sure data.json is deployed next to it.</p>`;
-    else setSync(false, `Sheets unreachable (${err})`);
+    if (!cached) app.innerHTML = `<p style="text-align:center;padding:80px 0">CV data unavailable. Check API_URL or deploy data.json next to index.html.</p>`;
+    setSync(false, `Sheets unreachable (${err})`);
   }
 }
-
-/* ---------- Lightbox ---------- */
-const lb = document.getElementById("lb");
-document.addEventListener("click", e => {
-  const t = e.target;
-  if (t.matches(".thumb, .proj img")) { lb.querySelector("img").src = t.dataset.big || t.src; lb.classList.add("on"); }
-  else if (lb.contains(t)) lb.classList.remove("on");
-});
-document.addEventListener("keydown", e => { if (e.key === "Escape") lb.classList.remove("on"); });
-
 load();
 </script>
 </body>
