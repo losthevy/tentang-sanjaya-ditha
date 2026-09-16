@@ -1,0 +1,70 @@
+{
+  "updatedAt": "",
+  "profil": {
+    "nama": "I Dewa Putu Sanjaya Ditha",
+    "tagline": "Public Asset Management Student, Competitive Essayist, Builder of AI-Assisted Web Prototypes",
+    "foto": "",
+    "kampus": "Politeknik Keuangan Negara STAN (PKN STAN)",
+    "lokasi": "Bintaro, South Tangerang, Indonesia",
+    "email": "canismajor.2019@gmail.com",
+    "email_kampus": "4111240040_sanjaya@pknstan.ac.id",
+    "telepon": "+62 813-5635-6561",
+    "linkedin": "https://www.linkedin.com/in/i-dewa-putu-sanjaya-ditha-6a8060323/",
+    "ringkasan": "Applied-undergraduate student in Public Asset Management with a track record of turning technical policy problems into readable, evidence-based arguments. Competed in more than 50 national and international academic competitions, winning 11 championship titles across essay, scientific writing, and infographic categories. Uses AI daily as a research, drafting, and prototyping partner, and builds working HTML web prototypes to make policy ideas tangible. Treats prompt engineering as a craft worth mastering, and enjoys teaching peers how to work with unfamiliar tools.",
+    "total_kompetisi": "50+",
+    "cv_pdf": ""
+  },
+  "pendidikan": [
+    {"institusi": "Politeknik Keuangan Negara STAN (PKN STAN)", "gelar": "Diploma IV in Public Asset Management", "keterangan": "Coursework: public asset life cycle, state budgeting, property valuation, applied taxation, financial statement analysis, audit practice, regional economics", "lokasi": "Bintaro, Indonesia", "periode": "2024 to present", "urutan": "1", "tampil": "Ya"},
+    {"institusi": "Universitas Gadjah Mada", "gelar": "Former Statistics Bachelor undergraduate student", "keterangan": "", "lokasi": "Yogyakarta, Indonesia", "periode": "2024", "urutan": "2", "tampil": "Ya"},
+    {"institusi": "SMA Negeri 1 Mataram", "gelar": "Senior high school", "keterangan": "", "lokasi": "Mataram, West Nusa Tenggara", "periode": "2022 to 2023", "urutan": "3", "tampil": "Ya"}
+  ],
+  "prestasi": [
+    {"tahun": "2026", "peringkat": "1st Place", "lomba": "Undergraduate Essay Competition, KPM International SDGs", "penyelenggara": "UKM KPM UMY", "tingkat": "International", "kategori": "Essay", "catatan": "Also Best Presentation and Favorite Poster", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "1st Place", "lomba": "Pekan Ilmiah Perguruan Tinggi Kedinasan (PIPTK) Essay Competition", "penyelenggara": "", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "1st Place", "lomba": "QOLAM PAI National Essay Competition", "penyelenggara": "UIN Sunan Ampel Surabaya", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "1st Place", "lomba": "Visualize Creative Contest Essay Competition", "penyelenggara": "Universitas Jember", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "1st Place", "lomba": "Student Journalistic Competition", "penyelenggara": "", "tingkat": "National", "kategori": "Journalistic writing", "catatan": "Best Research and Data Depth", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2024", "peringkat": "1st Place", "lomba": "Infographic Competition, Pekan Statistika", "penyelenggara": "", "tingkat": "National", "kategori": "Infographic", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "2nd Place", "lomba": "President University International Essay Competition", "penyelenggara": "President University", "tingkat": "International", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "3rd Place", "lomba": "AUSTENITE Essay Competition", "penyelenggara": "", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "3rd Place", "lomba": "PRISMATIC Competition", "penyelenggara": "", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "3rd Place", "lomba": "Lomba Esai Nasional (LEN)", "penyelenggara": "Universitas Pendidikan Indonesia", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "3rd Place", "lomba": "Global Pioneer Essay Competition", "penyelenggara": "Global Science Center", "tingkat": "National", "kategori": "Essay", "catatan": "Food Security subtheme", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2025", "peringkat": "Winner", "lomba": "Grow with BEM Contest", "penyelenggara": "BEM PKN STAN", "tingkat": "Campus", "kategori": "", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "Top 6 Finalist", "lomba": "OSH Festival Essay Competition", "penyelenggara": "Universitas Ahmad Dahlan", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2025", "peringkat": "Finalist", "lomba": "BPC National Creathink Fest", "penyelenggara": "", "tingkat": "National", "kategori": "Business plan", "catatan": "", "status": "", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "Finalist", "lomba": "XII National Agrarian Essay Competition", "penyelenggara": "Politeknik STPN", "tingkat": "National", "kategori": "Essay", "catatan": "", "status": "Ongoing", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "Finalist", "lomba": "Taxtival", "penyelenggara": "Universitas Brawijaya", "tingkat": "National", "kategori": "Tax essay", "catatan": "", "status": "Ongoing", "foto": "", "tautan": "", "tampil": "Ya"},
+    {"tahun": "2026", "peringkat": "Semifinalist", "lomba": "Business Case Competition, TEC Festival", "penyelenggara": "ITB", "tingkat": "National", "kategori": "Business case", "catatan": "", "status": "Ongoing", "foto": "", "tautan": "", "tampil": "Ya"}
+  ],
+  "organisasi": [
+    {"peran": "Mentor, Generation II Mentoring Program", "organisasi": "PKN STAN Student Dormitory", "periode": "2025 to 2026", "deskripsi": "Mentored a cohort of first-year students through academic adjustment, study habits, and campus life\nRan essay-writing mentoring for Arsana freshmen in the dormitory, coaching them from idea selection to submission-ready drafts\nDesigned the program identity, including the Bertumbuh Bersama mentoring logo", "urutan": "1", "tampil": "Ya"},
+    {"peran": "Member, Achievement Division", "organisasi": "STEMA PKN STAN", "periode": "2026", "deskripsi": "Supported peers in identifying, preparing for, and entering national academic competitions", "urutan": "2", "tampil": "Ya"},
+    {"peran": "Software Developer", "organisasi": "STAN Informatic Club (SIC)", "periode": "2024 to 2025", "deskripsi": "Built and maintained web-based tools for campus organizations", "urutan": "3", "tampil": "Ya"},
+    {"peran": "Staff, Hindu Spiritual Affairs", "organisasi": "Badan Asrama Mahasiswa (BAM), PKN STAN Student Dormitory Board", "periode": "2024 to 2025", "deskripsi": "Served as invited speaker for the campus Spiritual and Mental Development program", "urutan": "4", "tampil": "Ya"},
+    {"peran": "Fundraising Division Member", "organisasi": "Keluarga Mahasiswa Hindu Buddha (KMHB) PKN STAN", "periode": "2024 to 2026", "deskripsi": "", "urutan": "5", "tampil": "Ya"},
+    {"peran": "Volunteer", "organisasi": "PSB GALARASI Manggala (2024 to 2026), Tenggala (2026), and PKN STAN Library (2026)", "periode": "2024 to 2026", "deskripsi": "", "urutan": "6", "tampil": "Ya"}
+  ],
+  "kepanitiaan": [
+    {"peran": "Head of Training Division (BPHK)", "acara": "Generation II Mentor Training Program", "tahun": "2026", "urutan": "1", "tampil": "Ya"},
+    {"peran": "Head of Design Division", "acara": "Memoar Arsana", "tahun": "2026", "urutan": "2", "tampil": "Ya"},
+    {"peran": "Vice Head, Public Relations and Documentation", "acara": "Connectifest", "tahun": "2026", "urutan": "3", "tampil": "Ya"},
+    {"peran": "Public Relations and Documentation Staff", "acara": "Arsana Student Body Election Committee", "tahun": "2026", "urutan": "4", "tampil": "Ya"},
+    {"peran": "Logistics Staff", "acara": "Hire Me", "tahun": "2026", "urutan": "5", "tampil": "Ya"},
+    {"peran": "Creative Staff", "acara": "Fun Mentee", "tahun": "2026", "urutan": "6", "tampil": "Ya"},
+    {"peran": "Program Staff and Master of Ceremonies", "acara": "Dormtopia (Opening Ceremony and Dorm Got Talent)", "tahun": "2025", "urutan": "7", "tampil": "Ya"}
+  ],
+  "proyek": [
+    {"judul": "Arsana Student Body Election Website", "deskripsi": "Designed and built the online voting platform used for the PKN STAN student body election.", "periode": "2026", "tautan": "", "foto": "", "urutan": "1", "tampil": "Ya"},
+    {"judul": "Policy Prototypes for Competition Essays", "deskripsi": "Builds single-file HTML application prototypes that turn essay proposals into clickable products, covering public asset management, tax administration, disaster response, and health data systems.", "periode": "2025 to present", "tautan": "", "foto": "", "urutan": "2", "tampil": "Ya"},
+    {"judul": "Contributing Writer, PUSTAKA NARASI Insight Book", "deskripsi": "Wrote for Vol. 1 and Vol. 2 published by the PKN STAN Media Center.", "periode": "2026", "tautan": "", "foto": "", "urutan": "3", "tampil": "Ya"},
+    {"judul": "Peer Instructor", "deskripsi": "Online tutoring in sociology for the national academic aptitude test.", "periode": "2026", "tautan": "", "foto": "", "urutan": "4", "tampil": "Ya"}
+  ],
+  "keahlian": [
+    {"kelompok": "Domain", "isi": "Public asset life cycle management; Life cycle costing; Property valuation; State budgeting; Applied taxation; Financial statement analysis; Cost-benefit analysis", "urutan": "1", "tampil": "Ya"},
+    {"kelompok": "AI and technical", "isi": "Prompt engineering; Custom Claude Skills library; LLMs for research, drafting, and evaluation; Agentic workflows; HTML, CSS, JavaScript; Python for feasibility modeling; Blender 3D", "urutan": "2", "tampil": "Ya"},
+    {"kelompok": "Communication", "isi": "Academic and policy writing; Public speaking and event hosting; Mentoring and peer training; Graphic and infographic design", "urutan": "3", "tampil": "Ya"},
+    {"kelompok": "Languages", "isi": "Indonesian (native); English (professional working proficiency)", "urutan": "4", "tampil": "Ya"}
+  ]
+}

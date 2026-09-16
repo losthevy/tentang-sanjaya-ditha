@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Dewa Putu Sanjaya Ditha | CV</title>
+<meta name="description" content="Public Asset Management student at PKN STAN, competitive essayist, and builder of AI-assisted web prototypes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --fg:#37352f; --muted:#787774; --faint:#9b9a97;
+  --line:#e9e9e7; --soft:#f7f6f3; --hover:#f1f1ef; --link:#2383e2;
+  --t-blue:#e7f3f8; --t-blue-f:#337ea9;
+  --t-purple:#f3eef9; --t-purple-f:#9065b0;
+  --t-green:#edf3ec; --t-green-f:#448361;
+  --t-yellow:#fbf3db; --t-yellow-f:#9f6b00;
+  --t-gray:#f1f1ef; --t-gray-f:#787774;
+  --t-red:#fdebec; --t-red-f:#d44c47;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:underline;text-decoration-color:rgba(55,53,47,.35);text-underline-offset:2px}
+a:hover{text-decoration-color:var(--fg)}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:3px}
+img{max-width:100%;display:block}
+
+.cover{height:150px;background:
+  linear-gradient(90deg,rgba(255,255,255,0) 0 49.5%,rgba(255,255,255,.35) 49.5% 50.5%,rgba(255,255,255,0) 50.5%) 0 0/48px 48px,
+  linear-gradient(0deg,rgba(255,255,255,0) 0 49.5%,rgba(255,255,255,.35) 49.5% 50.5%,rgba(255,255,255,0) 50.5%) 0 0/48px 48px,
+  #d9e7ef}
+.page{max-width:860px;margin:0 auto;padding:0 24px 64px}
+
+.head{display:flex;gap:24px;align-items:flex-end;margin-top:-58px;flex-wrap:wrap}
+.avatar{width:128px;height:128px;border-radius:6px;border:4px solid #fff;background:var(--soft);object-fit:cover;box-shadow:0 0 0 1px var(--line)}
+.avatar-ph{display:grid;place-items:center;font:600 40px Newsreader,Georgia,serif;color:var(--faint)}
+.head-actions{margin-left:auto;display:flex;gap:6px;padding-bottom:6px}
+.btn{font:500 13px Inter,sans-serif;color:var(--fg);background:#fff;border:1px solid var(--line);border-radius:5px;padding:5px 10px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--hover)}
+
+h1{font:600 clamp(30px,5vw,42px)/1.15 Newsreader,Georgia,serif;margin:20px 0 6px;letter-spacing:-.01em}
+.tagline{color:var(--muted);margin:0 0 16px;font-size:16px}
+
+.props{display:grid;grid-template-columns:140px 1fr;gap:2px 12px;font-size:14px;margin:0 0 20px}
+.props dt{color:var(--muted);padding:4px 0}
+.props dd{margin:0;padding:4px 0;word-break:break-word}
+
+.callout{display:flex;gap:12px;background:var(--soft);border-radius:5px;padding:14px 16px;margin:8px 0 8px}
+.callout p{margin:0;max-width:68ch}
+
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin:22px 0 4px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat b{display:block;font:600 26px/1.1 Newsreader,Georgia,serif}
+.stat span{font-size:13px;color:var(--muted)}
+
+h2{font:600 22px/1.3 Inter,sans-serif;margin:44px 0 10px;display:flex;align-items:center;gap:8px}
+h2 small{font-weight:400;font-size:13px;color:var(--faint)}
+
+/* database view */
+.views{display:flex;gap:2px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:0}
+.view{font:500 13px Inter,sans-serif;color:var(--muted);background:none;border:0;border-bottom:2px solid transparent;padding:6px 10px;cursor:pointer;margin-bottom:-1px}
+.view:hover{color:var(--fg)}
+.view[aria-pressed="true"]{color:var(--fg);border-bottom-color:var(--fg)}
+.db{width:100%;border-collapse:collapse;font-size:14px}
+.db-wrap{overflow-x:auto}
+.db th{font-weight:400;color:var(--muted);text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.db td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.db tr:hover td{background:#fafaf9}
+.medal{width:28px;font-size:17px;text-align:center}
+.a-name{font-weight:500}
+.a-sub{color:var(--muted);font-size:13px}
+.thumb{width:44px;height:44px;border-radius:4px;object-fit:cover;cursor:zoom-in;border:1px solid var(--line)}
+.tag{display:inline-block;font-size:12px;line-height:1.5;padding:0 6px;border-radius:3px;white-space:nowrap;margin:1px 2px 1px 0}
+.tag.blue{background:var(--t-blue);color:var(--t-blue-f)}
+.tag.purple{background:var(--t-purple);color:var(--t-purple-f)}
+.tag.green{background:var(--t-green);color:var(--t-green-f)}
+.tag.yellow{background:var(--t-yellow);color:var(--t-yellow-f)}
+.tag.gray{background:var(--t-gray);color:var(--t-gray-f)}
+.tag.red{background:var(--t-red);color:var(--t-red-f)}
+.more{margin-top:8px}
+
+/* list blocks */
+.list{list-style:none;margin:0;padding:0}
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.item h3{margin:0;font-size:15px;font-weight:600}
+.item .when{color:var(--muted);font-size:13px;white-space:nowrap}
+.item .sub{grid-column:1/-1;color:var(--muted);font-size:14px}
+.item ul{grid-column:1/-1;margin:4px 0 0;padding-left:20px}
+.item li{margin:2px 0;max-width:72ch}
+
+.committee{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 24px}
+.committee div{padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.committee b{font-weight:500}
+
+.proj{display:grid;grid-template-columns:1fr 150px;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.proj.noimg{grid-template-columns:1fr}
+.proj img{width:150px;height:100px;object-fit:cover;border-radius:4px;border:1px solid var(--line);cursor:zoom-in}
+.proj h3{margin:0 0 2px;font-size:15px;font-weight:600}
+.proj p{margin:2px 0;color:var(--fg);max-width:68ch}
+
+.skills{display:grid;grid-template-columns:140px 1fr;gap:10px 16px;font-size:14px}
+.skills dt{color:var(--muted);padding-top:2px}
+.skills dd{margin:0}
+
+footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);color:var(--faint);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--faint);margin-right:6px;vertical-align:1px}
+.dot.live{background:#448361}
+
+.skel{background:linear-gradient(90deg,var(--soft),var(--hover),var(--soft));background-size:200% 100%;animation:sk 1.2s infinite;border-radius:4px;height:14px;margin:8px 0}
+@keyframes sk{to{background-position:-200% 0}}
+
+.lightbox{position:fixed;inset:0;background:rgba(15,15,15,.72);display:none;place-items:center;padding:24px;z-index:9;cursor:zoom-out}
+.lightbox.on{display:grid}
+.lightbox img{max-height:88vh;border-radius:4px;background:#fff}
+
+@media (max-width:640px){
+  .page{padding:0 16px 48px}
+  .props,.skills{grid-template-columns:1fr}
+  .props dt,.skills dt{padding-bottom:0}
+  .head-actions{margin-left:0}
+  .proj{grid-template-columns:1fr}
+  .proj img{width:100%;height:160px}
+  .db .hide-sm{display:none}
+}
+@media (prefers-reduced-motion:reduce){.skel{animation:none}html{scroll-behavior:auto}}
+@media print{
+  .cover,.head-actions,.views,.more,footer .dot,.thumb{display:none!important}
+  .head{margin-top:0}
+  h2{margin-top:22px;break-after:avoid}
+  .item,.db tr,.proj{break-inside:avoid}
+  body{font-size:12px}
+}
+</style>
+</head>
+<body>
+<div class="cover" aria-hidden="true"></div>
+<main class="page" id="app">
+  <div class="head">
+    <div class="avatar avatar-ph" id="avatar">ID</div>
+  </div>
+  <div class="skel" style="width:60%;height:34px;margin-top:24px"></div>
+  <div class="skel" style="width:80%"></div>
+  <div class="skel" style="width:70%"></div>
+</main>
+<div class="lightbox" id="lb" role="dialog" aria-label="Photo preview"><img alt=""></div>
+
+<script>
+/* ============================================================
+   KONFIGURASI
+   Tempel URL Web App Apps Script (berakhiran /exec) di bawah.
+   Jika kosong atau gagal, halaman memakai data.json.
+   ============================================================ */
+const API_URL = "";
+
+const CACHE_KEY = "cv-data-v1";
+const app = document.getElementById("app");
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const has = v => String(v ?? "").trim() !== "";
+
+/* ---------- Foto Google Drive ---------- */
+function driveId(u){
+  u = String(u || "");
+  const m = u.match(/\/d\/([\w-]{20,})/) || u.match(/[?&]id=([\w-]{20,})/);
+  return m ? m[1] : null;
+}
+function imgTag(url, cls, alt, w = 800){
+  if (!has(url)) return "";
+  const id = driveId(url);
+  const src = id ? `https://drive.google.com/thumbnail?id=${id}&sz=w${w}` : url;
+  const big = id ? `https://drive.google.com/thumbnail?id=${id}&sz=w1600` : url;
+  return `<img class="${cls}" src="${esc(src)}" data-id="${id || ""}" data-big="${esc(big)}" alt="${esc(alt)}" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)">`;
+}
+function imgFail(el){
+  const id = el.dataset.id;
+  if (id && !el.dataset.retry){ el.dataset.retry = 1; el.src = `https://lh3.googleusercontent.com/d/${id}=w800`; }
+  else el.remove();
+}
+
+/* ---------- Helpers ---------- */
+function rank(p){
+  p = String(p).toLowerCase();
+  if (/semi/.test(p)) return 5;
+  if (/1st|juara\s*1|first place|champion/.test(p)) return 1;
+  if (/2nd|juara\s*2|second place/.test(p)) return 2;
+  if (/3rd|juara\s*3|third place/.test(p)) return 3;
+  if (/winner|pemenang|harapan|best/.test(p)) return 3.5;
+  if (/final|top\s*\d/.test(p)) return 4;
+  return 6;
+}
+const MEDAL = {1:"🥇",2:"🥈",3:"🥉",3.5:"🏅",4:"🎖️",5:"📄",6:"📄"};
+function levelTag(t){
+  const s = String(t).toLowerCase();
+  const c = /internasional|international/.test(s) ? "purple" : /nasional|national/.test(s) ? "blue" : "gray";
+  return has(t) ? `<span class="tag ${c}">${esc(t)}</span>` : "";
+}
+function statusTag(t){
+  if (!has(t)) return "";
+  const c = /ongoing|berlangsung|progress/i.test(t) ? "yellow" : "green";
+  return `<span class="tag ${c}">${esc(t)}</span>`;
+}
+const bullets = s => String(s || "").split(/\n|\s\|\s/).map(x => x.trim()).filter(Boolean);
+const link = (href, text) => has(href) ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>` : "";
+
+/* ---------- Render ---------- */
+let achFilter = "all", achAll = false, DATA = null;
+
+function render(d){
+  DATA = d;
+  const p = d.profil || {};
+  const ach = (d.prestasi || []).map((a, i) => ({...a, _r: rank(a.peringkat), _i: i}))
+    .sort((a, b) => (Number(b.tahun) || 0) - (Number(a.tahun) || 0) || a._r - b._r || a._i - b._i);
+  const podium = ach.filter(a => a._r <= 3).length;
+  const first = ach.filter(a => a._r === 1).length;
+  const intl = ach.filter(a => /internasional|international/i.test(a.tingkat) && a._r <= 3.5).length;
+  const initials = String(p.nama || "ID").split(/\s+/).map(w => w[0]).slice(0, 2).join("");
+  const phone = String(p.telepon || "").replace(/[^\d+]/g, "");
+
+  document.title = `${p.nama || "CV"} | CV`;
+
+  app.innerHTML = `
+  <div class="head">
+    ${has(p.foto) ? imgTag(p.foto, "avatar", p.nama, 400) : `<div class="avatar avatar-ph">${esc(initials)}</div>`}
+    <div class="head-actions">
+      ${has(p.cv_pdf) ? `<a class="btn" href="${esc(p.cv_pdf)}" target="_blank" rel="noopener">Download PDF</a>` : ""}
+      <button class="btn" onclick="window.print()">Print</button>
+    </div>
+  </div>
+
+  <h1>${esc(p.nama)}</h1>
+  <p class="tagline">${esc(p.tagline)}</p>
+
+  <dl class="props">
+    ${has(p.kampus) ? `<dt>Campus</dt><dd>${esc(p.kampus)}</dd>` : ""}
+    ${has(p.lokasi) ? `<dt>Location</dt><dd>${esc(p.lokasi)}</dd>` : ""}
+    ${has(p.email) ? `<dt>Email</dt><dd>${link("mailto:" + p.email, p.email)}${has(p.email_kampus) ? `<br>${link("mailto:" + p.email_kampus, p.email_kampus)}` : ""}</dd>` : ""}
+    ${has(p.telepon) ? `<dt>Phone</dt><dd>${link("https://wa.me/" + phone.replace(/^\+/, ""), p.telepon)}</dd>` : ""}
+    ${has(p.linkedin) ? `<dt>LinkedIn</dt><dd>${link(p.linkedin, p.linkedin.replace(/^https?:\/\/(www\.)?/, ""))}</dd>` : ""}
+  </dl>
+
+  ${has(p.ringkasan) ? `<div class="callout"><span aria-hidden="true">💡</span><p>${esc(p.ringkasan)}</p></div>` : ""}
+
+  <div class="stats">
+    ${has(p.total_kompetisi) ? `<div class="stat"><b>${esc(p.total_kompetisi)}</b><span>competitions entered</span></div>` : ""}
+    <div class="stat"><b>${podium}</b><span>podium finishes</span></div>
+    <div class="stat"><b>${first}</b><span>first places</span></div>
+    <div class="stat"><b>${intl}</b><span>international awards</span></div>
+  </div>
+
+  <h2 id="awards">🏆 Awards and achievements <small>${ach.length} entries</small></h2>
+  <div class="views" role="group" aria-label="Filter achievements">
+    ${[["all","All"],["podium","Podium"],["finalist","Finalist"],["intl","International"],["ongoing","Ongoing"]]
+      .map(([k, l]) => `<button class="view" data-f="${k}" aria-pressed="${achFilter === k}">${l}</button>`).join("")}
+  </div>
+  <div class="db-wrap"><table class="db">
+    <thead><tr><th></th><th>Achievement</th><th class="hide-sm">Level</th><th>Year</th><th class="hide-sm"></th></tr></thead>
+    <tbody id="achBody"></tbody>
+  </table></div>
+  <button class="btn more" id="achMore" hidden></button>
+
+  ${section("🎓 Education", d.pendidikan, e => `
+    <li class="item"><h3>${esc(e.institusi)}</h3><span class="when">${esc(e.periode)}</span>
+      <span class="sub">${esc([e.gelar, e.lokasi].filter(has).join(", "))}</span>
+      ${has(e.keterangan) ? `<ul>${bullets(e.keterangan).map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
+    </li>`)}
+
+  ${section("🧭 Leadership and organizations", d.organisasi, o => `
+    <li class="item"><h3>${esc(o.peran)}</h3><span class="when">${esc(o.periode)}</span>
+      <span class="sub">${esc(o.organisasi)}</span>
+      ${has(o.deskripsi) ? `<ul>${bullets(o.deskripsi).map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
+    </li>`)}
+
+  ${(d.kepanitiaan || []).length ? `
+    <h2>🎪 Event and committee roles</h2>
+    <div class="committee">${d.kepanitiaan.map(k => `
+      <div><b>${esc(k.peran)}</b><br><span class="a-sub">${esc(k.acara)}${has(k.tahun) ? `, ${esc(k.tahun)}` : ""}</span></div>`).join("")}
+    </div>` : ""}
+
+  ${(d.proyek || []).length ? `
+    <h2>🛠️ Projects and creative work</h2>
+    ${d.proyek.map(x => `
+      <div class="proj ${has(x.foto) ? "" : "noimg"}">
+        <div>
+          <h3>${has(x.tautan) ? link(x.tautan, x.judul) : esc(x.judul)}</h3>
+          <div class="a-sub">${esc(x.periode)}</div>
+          <p>${esc(x.deskripsi)}</p>
+        </div>
+        ${imgTag(x.foto, "", x.judul, 600)}
+      </div>`).join("")}` : ""}
+
+  ${(d.keahlian || []).length ? `
+    <h2>🧩 Skills</h2>
+    <dl class="skills">${d.keahlian.map(s => `
+      <dt>${esc(s.kelompok)}</dt>
+      <dd>${String(s.isi || "").split(";").map(x => x.trim()).filter(Boolean).map(x => `<span class="tag gray">${esc(x)}</span>`).join(" ")}</dd>`).join("")}
+    </dl>` : ""}
+
+  <footer>
+    <span id="syncState"><span class="dot"></span>Loading data</span>
+    <span>${esc(p.nama)}</span>
+  </footer>`;
+
+  renderAch(ach);
+  app.querySelectorAll(".view").forEach(b => b.onclick = () => {
+    achFilter = b.dataset.f; achAll = false;
+    app.querySelectorAll(".view").forEach(x => x.setAttribute("aria-pressed", x === b));
+    renderAch(ach);
+  });
+}
+
+function section(title, rows, tpl){
+  if (!rows || !rows.length) return "";
+  return `<h2>${title}</h2><ul class="list">${rows.map(tpl).join("")}</ul>`;
+}
+
+function renderAch(ach){
+  const f = {
+    all: () => true,
+    podium: a => a._r <= 3.5,
+    finalist: a => a._r >= 4 && a._r < 6,
+    intl: a => /internasional|international/i.test(a.tingkat),
+    ongoing: a => /ongoing|berlangsung|progress/i.test(a.status)
+  }[achFilter];
+  const rows = ach.filter(f);
+  const LIMIT = 10;
+  const shown = achAll ? rows : rows.slice(0, LIMIT);
+  const body = document.getElementById("achBody");
+  body.innerHTML = shown.length ? shown.map(a => `
+    <tr>
+      <td class="medal" title="${esc(a.peringkat)}">${MEDAL[a._r]}</td>
+      <td>
+        <div class="a-name">${esc(a.peringkat)}, ${has(a.tautan) ? link(a.tautan, a.lomba) : esc(a.lomba)}</div>
+        <div class="a-sub">${esc([a.penyelenggara, a.kategori].filter(has).join(", "))}</div>
+        ${has(a.catatan) ? `<div class="a-sub">${esc(a.catatan)}</div>` : ""}
+        ${statusTag(a.status)}
+      </td>
+      <td class="hide-sm">${levelTag(a.tingkat)}</td>
+      <td>${esc(a.tahun)}</td>
+      <td class="hide-sm">${imgTag(a.foto, "thumb", a.lomba, 200)}</td>
+    </tr>`).join("")
+    : `<tr><td colspan="5" class="a-sub">No achievements match this view yet. Add a row in the Prestasi sheet to show it here.</td></tr>`;
+  const more = document.getElementById("achMore");
+  more.hidden = rows.length <= LIMIT;
+  more.textContent = achAll ? "Show fewer" : `Show all ${rows.length}`;
+  more.onclick = () => { achAll = !achAll; renderAch(ach); };
+}
+
+function setSync(live, text){
+  const el = document.getElementById("syncState");
+  if (el) el.innerHTML = `<span class="dot ${live ? "live" : ""}"></span>${esc(text)}`;
+}
+const fmtTime = iso => { const d = new Date(iso); return isNaN(d) ? "" : d.toLocaleString("en-GB", {dateStyle: "medium", timeStyle: "short"}); };
+
+/* ---------- Load: cache dulu, lalu data terbaru ---------- */
+async function getJSON(url){
+  const r = await fetch(url, {cache: "no-store"});
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const j = await r.json();
+  if (j.error) throw new Error(j.error);
+  return j;
+}
+async function load(){
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch (e) {}
+  if (cached) { render(cached); setSync(false, "Showing saved copy, checking for updates"); }
+
+  if (API_URL) {
+    try {
+      const d = await getJSON(API_URL);
+      render(d);
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify(d)); } catch (e) {}
+      setSync(true, `Synced from Google Sheets${d.updatedAt ? ", " + fmtTime(d.updatedAt) : ""}`);
+      return;
+    } catch (e) { console.warn("Sheets API failed:", e); }
+  }
+  try {
+    const d = await getJSON("data.json");
+    if (!cached || !API_URL) render(d);
+    setSync(false, API_URL ? "Sheets unreachable, showing saved data" : "Showing data.json. Set API_URL to sync with Sheets");
+  } catch (e) {
+    if (!cached) app.innerHTML = `<h1>CV data unavailable</h1><p class="tagline">Check API_URL in index.html or make sure data.json is deployed next to it.</p>`;
+  }
+}
+
+/* ---------- Lightbox ---------- */
+const lb = document.getElementById("lb");
+document.addEventListener("click", e => {
+  const t = e.target;
+  if (t.matches(".thumb, .proj img")) { lb.querySelector("img").src = t.dataset.big || t.src; lb.classList.add("on"); }
+  else if (lb.contains(t)) lb.classList.remove("on");
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") lb.classList.remove("on"); });
+
+load();
+</script>
+</body>
+</html>
